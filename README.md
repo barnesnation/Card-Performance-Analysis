@@ -68,8 +68,6 @@ This section categorizes cards based on their BIN (Bank Identification Number). 
 
 **4. Visualization**
 
-**Overview**
-
 This section visualizes the performance of different response codes by card type, focusing on the top 5 response codes for each card type. The visualizations help in understanding the distribution and trends of response codes. We made use of custom colors for the specific codes. Data was filtered for the month of September and data was grouped by Card Type and Response Code determining the percentage of each code. The top 5 response codes were identified and plotted on a bar chart per card type.
 
 
