@@ -48,8 +48,8 @@ Displays the first few rows of the combined DataFrame for verification.
 
 Updates the log file with the names of newly processed files.
 
-**Notes
-**
+**Notes**
+
 Error Handling: The code includes error handling for file reading issues, ensuring that the process continues even if some files are problematic.
 Performance: The use of pd.concat() ensures efficient aggregation of multiple DataFrames.
 
