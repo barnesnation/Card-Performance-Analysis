@@ -1,4 +1,4 @@
-**Card Performance Analysis**
+# **Card Performance Analysis** #
 
 ****Project Overview****
 
@@ -6,15 +6,15 @@ The Card Performance Analysis project is designed to analyze and evaluate the pe
 
 **Project Objectives**
 
-**Data Aggregation:**  Combine transaction data from multiple CSV files.
+* *Data Aggregation:*  Combine transaction data from multiple CSV files.
 
-**Data Cleaning:** Remove duplicates, handle missing values, and convert data types.
+* *Data Cleaning:* Remove duplicates, handle missing values, and convert data types.
 
-**Card Categorization:** Classify cards based on their BIN (Bank Identification Number).
+* *Card Categorization:* Classify cards based on their BIN (Bank Identification Number).
 
-**Monthly Performance Analysis:** Calculate and analyze monthly transaction trends and response codes.
+* *Monthly Performance Analysis:* Calculate and analyze monthly transaction trends and response codes.
 
-**Visualization:** Generate plots to visualize performance metrics and response code distributions.
+* *Visualization:* Generate plots to visualize performance metrics and response code distributions.
 
 
 **1. Data Aggregation and Cleaning**
@@ -22,7 +22,7 @@ This section of the project focuses on aggregating and cleaning transaction data
 
 **Explanation**
 
-**Setup and Initialization**
+* *Setup and Initialization*
 
 Folder Path: Specifies the directory where the CSV files are stored.
 Log File: Keeps track of which files have already been processed to avoid reprocessing.
@@ -31,29 +31,29 @@ Log File Handling
 Checks if the log file exists. If not, creates an empty log file.
 Reads the log file to get a list of previously processed files.
 
-**File Processing**
+* *File Processing*
 
 Iterates over each file in the specified folder.
 For each file not in the log, attempts to read it into a DataFrame.
 Handles potential CSV parsing errors and skips problematic lines.
 Adds non-empty DataFrames to a list and updates the log with the processed file names.
 
-**Data Concatenation**
+* *Data Concatenation*
 
 Concatenates all DataFrames in the list into a single DataFrame.
 If a combined DataFrame already exists, it appends the new data to it. Otherwise, it creates a new combined DataFrame.
 Displays the first few rows of the combined DataFrame for verification.
 
-**Log Update**
+* *Log Update*
 
 Updates the log file with the names of newly processed files.
 
-**Notes**
+* *Notes*
 
 Error Handling: The code includes error handling for file reading issues, ensuring that the process continues even if some files are problematic.
 Performance: The use of pd.concat() ensures efficient aggregation of multiple DataFrames.
 
-**Usage**
+* *Usage*
 
 Place your CSV files in the My Files folder.
 Run the script to aggregate and clean the data. The combined data will be stored in combined_df, and the processed files will be logged.
@@ -84,9 +84,9 @@ This project highlights the importance of managing different card types independ
 
 **Key findings include:**
 
-Prepaid Cards: These often face different challenges compared to Debit Cards, potentially due to their usage patterns or limitations.
+* *Prepaid Cards:* These often face different challenges compared to Debit Cards, potentially due to their usage patterns or limitations.
 
-Debit Cards: May have specific issues related to approval rates or insufficient funds that differ from those observed with Prepaid and Credit cards.
+* *Debit Cards:* May have specific issues related to approval rates or insufficient funds that differ from those observed with Prepaid and Credit cards.
 
 
 Understanding these differences allows financial institutions to implement targeted improvements and strategies for each card type. By addressing the unique needs and challenges associated with each type, institutions can enhance overall card performance and customer satisfaction.
