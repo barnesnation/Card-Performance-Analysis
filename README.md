@@ -78,4 +78,16 @@ This section visualizes the performance of different response codes by card type
 ![image](https://github.com/user-attachments/assets/33d465cd-57d9-4356-89c2-0be29a7366d6)
 
 
+**Conclusion**
+
+This project highlights the importance of managing different card types independently due to their distinct performance characteristics and challenges. The analysis revealed that Prepaid, Debit, and Credit cards each exhibit unique patterns in response codes, with varying frequencies of issues such as insufficient funds or transaction approvals. By examining these trends, financial institutions can better understand the performance of each card type and address specific issues effectively.
+
+**Key findings include:**
+
+Prepaid Cards: These often face different challenges compared to Debit Cards, potentially due to their usage patterns or limitations.
+
+Debit Cards: May have specific issues related to approval rates or insufficient funds that differ from those observed with Prepaid and Credit cards.
+
+
+Understanding these differences allows financial institutions to implement targeted improvements and strategies for each card type. By addressing the unique needs and challenges associated with each type, institutions can enhance overall card performance and customer satisfaction.
 
